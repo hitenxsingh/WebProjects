@@ -59,7 +59,7 @@ body{
 
 /* cards */
 
-.card{
+.listing-card{
     border: none !important;
     margin: 2rem;
 }
@@ -116,4 +116,8 @@ body{
 .show-card{
     padding-left: 0;
     padding-right: 0;
+}
+
+.search{
+    margin-left: 290.333333% !important;
 }
