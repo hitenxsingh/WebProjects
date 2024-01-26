@@ -10,11 +10,17 @@
           <a class="nav-link"  href="/">Home</a>
           <a class="nav-link" href="/listings/new">Add New Listing</a>
           <a class="nav-link" href="/listings">All Listings</a>
-         
-          <form class="d-flex" role="search">
-            <input class="search form-control me-2 col-6 offset-10" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+        </div>
+
+        <div class="navbar-nav ms-auto">
+          <% if(!currUser){ %>
+          <a class="nav-link"  href="/signup">Sign up</a>
+          <a class="nav-link" href="/login">Log in</a>
+          <% } %>
+
+          <% if(currUser){ %>
+          <a class="nav-link" href="/logout">Log out</a>
+          <% } %>
         </div>
       </div>
     </div>
